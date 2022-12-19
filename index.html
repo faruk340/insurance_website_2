@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javaScriptAnimation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>insurancekarlo.com</title>
+</head>
+<body>
+    <div class="header_top" id="navbar">
+        <div class="header_contact">
+            <div class="header_contact_container">
+                <div class="contact_content">
+                    <p><i class="fa-solid fa-phone" style="padding-right: 0.5em;"></i>1800 123 1234 &nbsp;|&nbsp; <i class="fa-solid fa-envelope" style="padding-right: 0.5em;"></i>support@insurancekarlo.com</p>
+                </div>
+                <div class="header_social_media_icon_container">
+                    <ul class="header_social_media_icon">
+                        <li><a href=""><i style="color: #4267B2; font-size: 1.3rem;" class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i style="color: #C13584; font-size: 1.3rem;" class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i style="color: #4267B2; font-size: 1.3rem;" class="fa-brands fa-twitter"></i></a></i></li>
+                        <li><a href=""><i style="color: #1DA1F2; font-size: 1.3rem;" class="fa-brands fa-linkedin"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_container">
+            <div class="toggle_bar">
+                <button onclick="toggleFunction()" id="togglebarBtn"><i id="menuBtn" class="fa-solid fa-bars"></i></button>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+            <div class="header_navigation" id="toggleNavBar">
+                <div class="header_log">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li><a id="aTag1" href="">ABOUT US</a></li>
+                        <li><a id="aTag2" href="">PRODUCTS</a></li>
+                        <li><a id="aTag3" href="">GRIEVANCES</a></li>
+                        <li><a id="aTag4" href="">CONTACT</a></li>          
+                        <li class="header_nav_partnar_login_btn"><a href="">PARTNER LOGIN</a></li>          
+                        <li class="header_nav_employee_login_btn"><a href="">EMPLOYEE LOGIN</a></li>          
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header onclick="toggleFunctionOff()">
+        <img src="./images/bg.png" alt="">
+        <div class="header_content">
+            <h5>InsuranceKarlo.com</h5>
+            <p>Protect yourself and your loved ones against risks.
+                Always have reliable insurance against accidents. <br>
+                In your insurance money and time save money.</p>
+        </div>
+        <div class="container">
+            <div class="our_insurance_catagory">
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/twowheeler_insurance.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Two Wheeler</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/car.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Private Car</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/truck_two.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="www.google.com">Commercial Vehicle</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/heart_insurance.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Health Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/home_log.jpeg" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Home Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/travel_two.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Travel Insurance</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="our_insurance_catagory_two">
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/home_log.jpeg" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="#">Home <br>Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/fir_insurance.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Fire <br>Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/travel_two.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Travel <br>Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/personal_accident.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Personal Accident <br> Insurance</a></p>
+                    </div>
+                </div>
+                <div class="insurance_container">
+                    <div class="insurance_image">
+                        <img src="./images/insurance_cata_img/pet-care.png" alt="">
+                    </div>
+                    <div class="insurance_content">
+                        <p><a href="">Pet <br>Insurance</a></p>
+                    </div>
+                </div>
+                
+            </div> -->
+        </div>
+    </header>
+
+    <!-- ===================================================Who We Are=============================================== -->
+
+    <div class="container">
+        <div class="who_we_are_container">
+            <div class="who_we_are_header_container">
+                <h3>Who We Are</h3>
+                <div class="border_small">
+                    <div class="border_big">
+                        <div class="border_big_two">
+
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="who_we_are_flex_box">
+                <div class="who_we_are_container_image">
+                    <img src="./images/background.png" alt="who-we-are-new">
+                </div>
+                <div class="who_we_are_container_content">
+                <div class="who_we_are_container_content_inner">
+                    <p>For over 17 years, we have been protecting aspirations, business and future Our expertise and experience goes beyond giving advice and helping you choose the right insurance.</p>
+                    <button class="who_we_are_container_btn">Know More <span><i class="fa-solid fa-angles-right"></i></span></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- ==============================================Health Insurance=========================== -->
+
+    <div class="container">
+        <div class="health_insurance_cotainer">
+            <div class="health_insurance_flex_box">
+                <div class="health_insurance_cotainer_content">
+                    <div class="health_insurance_cotainer_content_inner">
+                        <h3 class="health_insurance_cotainer_content_header">Health Insurance</h3>
+                        <p class="health_insurance_cotainer_content_para">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                        <ul class="health_insurance_cotainer_content_list">
+                            <li><i class="fa-solid fa-circle-check"></i>Digital Marketing Solutions for Tomorrow</li>
+                            <li><i class="fa-solid fa-circle-check"></i>Our Talented & Experienced Marketing Agency</li>
+                            <li><i class="fa-solid fa-circle-check"></i>Create your own skin to match your brand</li>
+                        </ul>
+                        <button class="who_we_are_container_btn">Know More <span><i class="fa-solid fa-angles-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="health_insurance_cotainer_image">
+                    <img src="./images//services.svg" alt="services">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================Insurance Advisor============================== -->
+
+
+    <div class="insurance_advisor_container_outer">
+        <div class="container">
+            <div class="insurance_advisor_container">
+                <div class="insurance_advisor_container_header_content">
+                    <h3>Become A Certified RIBPL Insurance Advisor (POSP)</h3>
+                    <p>Our onboarding POS agents 60,000+ and counting</p>
+                </div>
+                <div class="insurance_advisor_container_flex_box">
+                    <div class="insurance_advisor_container_flex_box_content">
+                        <div class="insurance_advisor_container_flex_box_content_header">
+                            <h3>Why Become A RenewBuy POSP Advisor :</h3>
+                        </div>
+                        <div class="insurance_advisor_container_flex_box_content_lists">
+                            <ul>
+                                <li><img src="./images/BulletPoint.svg" alt="BulletPoint"><p>Zero investment business opportunity</p></li>
+                                <li><img src="./images/BulletPoint.svg" alt="BulletPoint"><p>Free POSP Certification under IRDAI guidelines</p></li>
+                                <li><img src="./images/BulletPoint.svg" alt="BulletPoint"><p>Attractive Pay-outs</p></li>
+                                <li><img src="./images/BulletPoint.svg" alt="BulletPoint"><p>Digital Passbook to track your business</p></li>
+                                <li><img src="./images/BulletPoint.svg" alt="BulletPoint"><p>Dedicated Relationship manager support</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="insurance_advisor_container_flex_box_image">
+                        <img src="./images/POSP.svg" alt="POSP">
+                    </div>
+                </div>
+                <div class="insurance_advisor_container_bottom_content">
+                    <h3>Join our exclusive network of expert POSP Advisors spread across 680+ districts across India</h3>
+                    <button class="insurance_advisor_container_bottom_btn">Register Now <span><i class="fa-solid fa-angles-right"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="swaper-slider-section">
+            <div class="who_we_are_header_container">
+                <h3>Our Partners</h3>
+                <div class="border_small">
+                    <div class="border_big">
+                        <div class="border_big_two">
+
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="box-1 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_1.jpg" alt="Bharti AXA">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>	Bharti AXA Life Insurance Company Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-2 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_2.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Kotak Mahindra Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_3.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_4.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_6.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_7.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_9.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_10.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_11.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_12.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_13.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_14.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_15.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_16.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_17.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="box-3 box">
+                          <div class="img-box">
+                              <img src="./images/our_partners_img/logo_18.jpg" alt="">
+                          </div>
+                          <!-- <div class="content-box">
+                              <p>Max Life Insurance Co. Ltd.</p>
+                          </div> -->
+                      </div>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+              </div>
+          </div>
+
+<!-- =================================================================Footer_section================================= -->
+
+
+          <footer>
+            <div class="container">'
+                <div class="footer_flex_box">
+                    <div class="footer_box">
+                        <ul>
+                            <li style="color: #2f55d4; font-size: 1.6rem;">GENERAL</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Articles</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Press</li>
+                            <li><i class="fa-solid fa-angle-right"></i>About Us</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Contact Us</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Grievance Redressal</li>
+                        </ul>
+                    </div>
+                    <div class="footer_box">
+                        <ul>
+                            <li style="color: #2f55d4; font-size: 1.6rem;">USEFUL LINKS</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Claim Assistance</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Motor Insurance Claim</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Motor Insurance FAQs</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Motor Insurance Calculator</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Third Party Insurance</li>
+                        </ul>
+                    </div>
+                    <div class="footer_box">
+                        <ul>
+                            <li style="color: #2f55d4; font-size: 1.6rem;">HEALTH INSURANCE</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Individual Health Insurance</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Family Health Insurance</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Mediclaim Policy</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Cashless Mediclaim Policy</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Top-up Health Insurance</li>
+                        </ul>
+                    </div>
+                    <div class="footer_box">
+                        <ul>
+                            <li style="color: #2f55d4; font-size: 1.6rem;">CONNECT US</li>
+                            <li><i class="fa-solid fa-envelope"></i>realinsurancebrokerspvtltd@gmail.com</li>
+                            <li><i class="fa-solid fa-phone"></i>+91 9431813129</li>
+                        </ul>
+                        <div class="our_link">
+                            <ul>
+                                <li><a href=""><i style="color: #4267B2; font-size: 1.3rem;" class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i style="color: #C13584; font-size: 1.3rem;" class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i style="color: #4267B2; font-size: 1.3rem;" class="fa-brands fa-twitter"></i></a></i></li>
+                                <li><a href=""><i style="color: #1DA1F2; font-size: 1.3rem;" class="fa-brands fa-linkedin"></i></a></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_border"></div>
+                <div class="footer_content">
+                    <p>© Copyright 2021 Real Insurance Brokers Private Limited. All Rights Reserved.</p>
+                </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          loop:true,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            300: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          },
+        });
+      </script>
+    <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.backgroundColor = "#fff";
+    // document.getElementById("togglebarBtn").style.backgroundColor="#fff";
+    // document.getElementById("menuBtn").style.color="#000";
+    document.getElementById("aTag2").style.color="#000";
+    document.getElementById("aTag3").style.color="#000";
+    document.getElementById("aTag4").style.color="#000";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.backgroundColor = "";
+    // document.getElementById("togglebarBtn").style.backgroundColor = "";
+    // document.getElementById("menuBtn").style.color="";
+    document.getElementById("aTag2").style.color="#fff";
+    document.getElementById("aTag3").style.color="#fff";
+    document.getElementById("aTag4").style.color="#fff";
+  }
+}
+</script>
+<script>
+    function toggleFunction() {
+  var x = document.getElementById("toggleNavBar");
+  var z = document.getElementById("menuBtn");
+  var a = document.getElementById("togglebarBtn");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.top = "0";
+    a.style.backgroundColor="#202942"
+    z.style.color="#fff"
+  } else {
+    x.style.display = "none";
+    z.style.color="#000"
+    a.style.backgroundColor="#fff"
+  }
+}
+
+function toggleFunctionOff(){
+    // var y = document.getElementById("htmlId");
+      var x = document.getElementById("toggleNavBar");
+    if(x.style.display==="block"){
+        x.style.display="none"
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-size: 14px;
+}
+li{
+    list-style: none;
+}
+.header_top{
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    background: transparent;
+    transition: all 0.6s;
+}
+.header_contact{
+    width: 100%;
+    height: 30px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header_container{
+    position: relative;
+    width: 100%;
+    background-color: rgb(47, 85, 212);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.header_container .toggle_bar{
+    display: none;
+    top: 16%;
+    right: 4%;
+    position: absolute;
+    z-index: 10005;
+    color: #fff;
+}
+.header_container .toggle_bar button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+.header_container .toggle_bar i{
+    font-size: 3rem;
+    color: #000;
+}
+.header_contact_container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_social_media_icon_container .header_social_media_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_social_media_icon_container .header_social_media_icon li{
+    margin: 0 0.8em;
+}
+.header_navigation{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.6s;
+}
+.header_nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_nav ul li{
+    list-style: none;
+    padding: 0.8em;
+}
+.header_nav ul li a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.header_nav ul li:hover a{
+    color: #ff6347 !important;
+}
+.header_nav ul li.header_nav_partnar_login_btn{
+    text-decoration: none;
+    margin: 0 0.8em;
+    background-color: #ff6347;
+    border-radius: 25px;
+    padding: 1.2em;
+    transition: all 0.6s;
+}
+.header_nav ul li.header_nav_employee_login_btn{
+    margin: 0 0.8em;
+    background-color: #ff6347;
+    border-radius: 25px;
+    padding: 1.2em;
+    transition: all 0.6s;
+}
+.header_nav ul li.header_nav_partnar_login_btn:hover{
+    background-color: #fff;
+    color: #ff6347;
+}
+.header_nav ul li.header_nav_employee_login_btn:hover{
+    background-color: #fff;
+    color: #ff6347;
+}
+.header_nav ul li.header_nav_partnar_login_btn a{
+    color: #fff;
+    transition:all 0.6s;
+}
+.header_nav ul li.header_nav_employee_login_btn a{
+    color: #fff;
+    transition:all 0.6s;
+}
+.header_nav ul li.header_nav_partnar_login_btn:hover a{
+    color: #ff6347;
+}
+.header_nav ul li.header_nav_employee_login_btn:hover a{
+    color: #ff6347;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(47, 85, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header img{
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    color: #fff;
+    text-align:  center;
+    transform: scale(1.4);
+}
+.header_content h1{
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.header_content h5{
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+.header_content p{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* ===================================our_insurance_catagory============================= */
+
+.our_insurance_catagory{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15em;
+}
+.our_insurance_catagory_two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8em;
+}
+.our_insurance_catagory .insurance_container{
+    width: 15%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.our_insurance_catagory .insurance_container .insurance_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(47, 85, 212);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.our_insurance_catagory .insurance_container .insurance_image img{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+}
+.our_insurance_catagory .insurance_container .insurance_content{
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    text-align: center;
+}
+.our_insurance_catagory .insurance_container .insurance_content p a{
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.our_insurance_catagory .insurance_container .insurance_content p :hover a{
+    color: rgb(47, 85, 212);
+    cursor: pointer;
+}
+.our_insurance_catagory .insurance_container .insurance_content p{
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.our_insurance_catagory .insurance_container .insurance_content p:hover a{
+    color: rgb(47, 85, 212);
+    cursor: pointer;
+}
+
+
+
+.our_insurance_catagory_two .insurance_container{
+    width: 15%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.our_insurance_catagory_two .insurance_container .insurance_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.our_insurance_catagory_two .insurance_container .insurance_image img{
+    width: 50px ;
+    height: 50px;
+    border: 1px solid rgb(47, 85, 212);
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5em;
+}
+.our_insurance_catagory_two .insurance_container .insurance_content{
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    text-align: center;
+    height: 50%;
+}
+.our_insurance_catagory_two .insurance_container .insurance_content p a{
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.our_insurance_catagory_two .insurance_container .insurance_content p :hover a{
+    color: rgb(47, 85, 212);
+    cursor: pointer;
+}
+.our_insurance_catagory_two .insurance_container .insurance_content p{
+    color: #000;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.our_insurance_catagory_two .insurance_container .insurance_content p:hover a{
+    color: rgb(47, 85, 212);
+    cursor: pointer;
+}
+
+/* ===================================================Who We Are=============================================== */
+
+.who_we_are_container{
+    width: 100%;
+}
+.who_we_are_header_container{
+    width: 100%;
+    margin: 10em 0;
+}
+.who_we_are_container h3{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.who_we_are_flex_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.border_small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+.border_big{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #2f55d4;
+}
+.border_big_two{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    border-bottom: 5px solid #2f55d4;
+    border-radius: 25px;
+}
+.who_we_are_container_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.who_we_are_container_content_inner{
+    width: 100%;
+}
+/* .who_we_are_container_content_inner p{
+    border: 1px solid red;
+} */
+.who_we_are_container_btn{
+    position: relative;
+    outline: none;
+    background-color: #2f55d4;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.who_we_are_container_btn span{
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(90deg); */
+    animation: btnanimation 0.8s infinite ease-in-out;
+}
+.who_we_are_container_image img{
+    width: 700px;
+    height: 300px;
+}
+@keyframes btnanimation {
+    0% {
+    left: 85%;
+      opacity: 1;
+    }
+    100% {
+        left: 90%;
+      opacity: 0.2;
+    }
+  }
+
+
+/* ==============================================Health Insurance=========================== */
+
+.health_insurance_cotainer{
+    width: 100%;
+    margin: 10em 0;
+}
+.health_insurance_cotainer .health_insurance_flex_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.health_insurance_cotainer .health_insurance_flex_box h3{
+    font-size: 3.5rem;
+    padding: 0.5em 0;
+}
+.health_insurance_cotainer .health_insurance_flex_box p{
+    padding: 0.5em 0;
+}
+.health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content .health_insurance_cotainer_content_inner{
+    width: 100%;
+}
+/* .health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content_list{
+    border: 1px solid red;
+} */
+.health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content_list li{
+    font-size: 1.4rem;
+    padding: 0.5em;
+}
+.health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content_list li i{
+    padding-right: 1em;
+    color: #2f55d4;
+}
+.health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_image img{
+    width: 550px;
+    height: 500px;
+}
+
+
+
+/* ==========================================Insurance Advisor============================= */
+
+
+.insurance_advisor_container_outer{
+    width: 100%;
+    background-color: #2f55d4;
+    padding-bottom: 5em;
+}
+.insurance_advisor_container_outer .insurance_advisor_container{
+    width: 100%;
+}
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_header_content{
+    text-align: center;
+}
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_header_content h3{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding-top: 2em;
+}
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_header_content p{
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 2em 0;
+}
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_flex_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_flex_box .insurance_advisor_container_flex_box_content h3{
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+}
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_flex_box .insurance_advisor_container_flex_box_content .insurance_advisor_container_flex_box_content_lists ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8em 0;
+    color: #fff;
+}
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_bottom_content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_bottom_content h3{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 2.5em 0;
+}
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_bottom_content .insurance_advisor_container_bottom_btn{
+    position: relative;
+    outline: none;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_bottom_content .insurance_advisor_container_bottom_btn span{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(90deg); */
+    animation: btnanimationTwo 0.8s infinite ease-in-out;
+}
+@keyframes btnanimationTwo {
+    0% {
+    left: 80%;
+      opacity: 1;
+    }
+    100% {
+        left: 90%;
+      opacity: 0.2;
+    }
+  }
+
+.insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_bottom_content .insurance_advisor_container_bottom_btn:hover{
+    background-color: #fff;
+    color: #ff6347;
+}
+
+
+/* ==========================================Our Partners section=============================== */
+
+.swaper-slider-section {
+    padding: 5em 0;
+  }
+  .swaper-slider-section .who_we_are_header_container h3{
+    margin-top: -3.2em;
+    text-align: center;
+    font-size: 3.5rem;
+}
+  .swiper {
+    margin-top: -6em;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.8rem;
+    background: #fff;
+    border: 2px solid #2f55d4;
+    padding: 1em 0.5em;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #000;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    transform: scale(1.3);
+  }
+
+
+  /* =====================================footer section===================================== */
+
+  footer{
+    width: 100%;
+    background-color: rgb(32, 41, 66);
+    padding-bottom: 5em;
+  }
+
+  .footer_flex_box{
+    padding: 5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* .footer_flex_box .footer_box{
+    border: 1px solid red;
+  } */
+  .footer_flex_box .footer_box ul li{
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.8em;
+    cursor: pointer;
+    transition:  all 0.3s;
+  }
+  .footer_flex_box .footer_box ul li:hover{
+    color: #2f55d4;
+  }
+  .footer_flex_box .footer_box ul li i{
+    padding-right: 0.8em;
+  }
+  .footer_flex_box .our_link ul{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer_flex_box .our_link ul li a i{
+    border: 1px solid #2f55d4;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .footer_flex_box .our_link ul li a i:hover{
+    border: 1px solid #fff;
+  }
+
+  footer .footer_border{
+    margin-top: 5em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid rgb(80, 78, 78);
+  }
+  footer .footer_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+
+
+
+  @media (max-width: 991px){
+    html{
+        font-size: 10px;
+    }
+    /* .header_top{
+        display: none;
+    } */
+    #navbar{
+        background-color: #fff;
+    }
+    .content-section .box-section .box-contact .swiper-slide img {
+        display: block;
+        width: 150%;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        text-align: center;
+      }
+      header{
+        height: auto;
+      }
+      .header_contact{
+        display: none;
+      }
+      .header_contact_container{
+        width: 90%;
+        flex-direction: column;
+      }
+      .header_container .toggle_bar{
+        display: block;
+      }
+      .header_content {
+        padding: 0 1.5em;
+      }
+      .header_content h5{
+        margin-top: 2.2em;
+      }
+      .header_navigation{
+        position: absolute;
+        top: -400%;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #202942;
+        transition: all 0.6s;
+      }
+      .header_nav ul li.header_nav_partnar_login_btn{
+        background-color: rgb(32, 41, 66);
+    }
+    .header_nav ul li.header_nav_employee_login_btn{
+        background-color: rgb(32, 41, 66);
+    }
+      .header_nav ul{
+        flex-direction: column;
+      }
+      .our_insurance_catagory{
+        flex-direction: column;
+        width: 100%;
+      }
+      .our_insurance_catagory_two{
+        flex-direction: column;
+        width: 100%;
+      }
+      .our_insurance_catagory .insurance_container{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1.5em;
+      }
+      .our_insurance_catagory .insurance_container .insurance_image{
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .our_insurance_catagory_two .insurance_container{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 1.5em;
+      }
+      .who_we_are_flex_box{
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+      }
+      .who_we_are_container_content_inner{
+        width: 100%;
+      }
+      .who_we_are_container_image img{
+        width: 100%;
+        height: 100%;
+      }
+      .health_insurance_cotainer .health_insurance_flex_box{
+        flex-direction: column;
+        width: 100%;
+      }
+      .health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_content{
+        flex-direction: column;
+        width: 100%;
+      }
+      .health_insurance_cotainer .health_insurance_flex_box .health_insurance_cotainer_image img{
+        width: 100%;
+        height: 100%;
+      }
+      .insurance_advisor_container_outer .insurance_advisor_container .insurance_advisor_container_flex_box{
+        flex-direction: column;
+        width: 100%;
+      }
+      .insurance_advisor_container_flex_box_image img{
+        width: 100%;
+        height: 100%;
+      }
+      .footer_flex_box{
+        flex-direction: column;
+        width: 100%;
+      }
+  }
